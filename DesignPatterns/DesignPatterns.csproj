@@ -46,6 +46,9 @@
     <Compile Include="Proxy\ImagemProxy.cs" />
     <Compile Include="Proxy\ImagemReal.cs" />
     <Compile Include="Proxy\_Imagem.cs" />
+    <Compile Include="Strategy\InserirJogo.cs" />
+    <Compile Include="Strategy\VideoGame.cs" />
+    <Compile Include="Strategy\_InserirJogo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

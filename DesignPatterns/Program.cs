@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Proxy;
+using DesignPatterns.Strategy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,28 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+
+            //Strategy
+            VideoGame snes = new VideoGame(new InserirJogoSuperNintendo());
+            snes.InserirJogo();
+
+            Console.WriteLine();
+
+            VideoGame play = new VideoGame(new InserirJogoPlaystation());
+            play.InserirJogo();
+
+
+            Console.ReadKey();
+
+            Console.Clear();
+
+            //Proxy
             PadraoProxy();
-            Console.ReadKey();   
+
+            Console.ReadKey();
+
+
+           
         }
         
         public static void PadraoProxy()
